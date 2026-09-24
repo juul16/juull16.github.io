@@ -838,5 +838,366 @@ body.light-mode .news-card p {
         min-height: auto;
 
     }
+/* =====================================================
+   FAQZY LEAGUE FOOTER
+   ===================================================== */
+
+.site-footer {
+
+    position: relative;
+
+    min-height: 630px;
+
+    background: #ff5a1f;
+
+    color: #090a0d;
+
+    overflow: hidden;
+
+    padding: 80px 66px 0;
+
+}
+
+
+
+/* =====================================================
+   FOOTER CONTENT
+   ===================================================== */
+
+.footer-content {
+
+    position: relative;
+
+    z-index: 5;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-start;
+
+}
+
+
+
+/* =====================================================
+   SITEMAP
+   ===================================================== */
+
+.footer-column {
+
+    display: flex;
+
+    flex-direction: column;
+
+    width: 250px;
+
+}
+
+
+.footer-column h3,
+.footer-socials h3 {
+
+    font-family: "Barlow Condensed", sans-serif;
+
+    font-size: 20px;
+
+    font-weight: 900;
+
+    margin-bottom: 18px;
+
+}
+
+
+.footer-column a {
+
+    width: fit-content;
+
+    color: #090a0d;
+
+    font-size: 18px;
+
+    line-height: 1.9;
+
+    text-decoration: none;
+
+    transition: 0.2s ease;
+
+}
+
+
+.footer-column a:hover {
+
+    transform: translateX(4px);
+
+    opacity: 0.65;
+
+}
+
+
+
+/* =====================================================
+   SOCIALS
+   ===================================================== */
+
+.footer-socials {
+
+    margin-top: 65px;
+
+}
+
+
+.social-icons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 27px;
+
+}
+
+
+.social-icon {
+
+    width: 28px;
+
+    height: 28px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #090a0d;
+
+    transition: 0.2s ease;
+
+}
+
+
+.social-icon svg {
+
+    width: 22px;
+
+    height: 22px;
+
+    fill: currentColor;
+
+}
+
+
+.social-icon:hover {
+
+    transform: translateY(-3px);
+
+    opacity: 0.65;
+
+}
+
+
+
+/* =====================================================
+   DECORATIEVE FAQZY VORMEN
+   ===================================================== */
+
+.footer-shapes {
+
+    position: absolute;
+
+    right: -90px;
+
+    top: 90px;
+
+    width: 620px;
+
+    height: 650px;
+
+    pointer-events: none;
+
+}
+
+
+.shape {
+
+    position: absolute;
+
+    width: 430px;
+
+    height: 220px;
+
+    transform: skewY(-27deg);
+
+    transform-origin: center;
+
+}
+
+
+/* BOVENSTE VLAK */
+
+.shape-1 {
+
+    right: -30px;
+
+    top: 20px;
+
+    background: #ffe6df;
+
+}
+
+
+/* MIDDELSTE VLAK */
+
+.shape-2 {
+
+    right: -30px;
+
+    top: 185px;
+
+    background: #ffb79d;
+
+}
+
+
+/* ONDERSTE VLAK */
+
+.shape-3 {
+
+    right: -30px;
+
+    top: 350px;
+
+    background: #ff9470;
+
+}
+
+
+
+/* =====================================================
+   COPYRIGHT
+   ===================================================== */
+
+.footer-bottom {
+
+    position: absolute;
+
+    left: 66px;
+
+    bottom: 10px;
+
+    z-index: 10;
+
+}
+
+
+.footer-bottom p {
+
+    margin: 0;
+
+    font-size: 16px;
+
+    color: #111216;
+
+}
+
+
+
+/* =====================================================
+   BACK TO TOP
+   ===================================================== */
+
+.back-to-top {
+
+    position: absolute;
+
+    right: 66px;
+
+    bottom: -1px;
+
+    width: 56px;
+
+    height: 56px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: rgba(60, 60, 60, 0.35);
+
+    color: white;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    z-index: 20;
+
+    transition: 0.2s ease;
+
+}
+
+
+.back-to-top:hover {
+
+    background: rgba(40, 40, 40, 0.6);
+
+    transform: translateY(-3px);
+
+}
+
+
+
+/* =====================================================
+   FOOTER MOBIEL
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    .site-footer {
+
+        min-height: 700px;
+
+        padding: 60px 25px 0;
+
+    }
+
+
+    .footer-shapes {
+
+        right: -300px;
+
+        opacity: 0.7;
+
+    }
+
+
+    .footer-bottom {
+
+        left: 25px;
+
+        bottom: 15px;
+
+    }
+
+
+    .footer-bottom p {
+
+        font-size: 13px;
+
+    }
+
+
+    .back-to-top {
+
+        right: 20px;
+
+        width: 48px;
+
+        height: 48px;
+
+    }
+
+}
 
 }
