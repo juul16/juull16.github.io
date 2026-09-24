@@ -1,0 +1,842 @@
+/* =====================================================
+   BASIS
+   ===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    background: #08090c;
+
+    color: #ffffff;
+
+    font-family: "Inter", Arial, sans-serif;
+
+    min-height: 100vh;
+
+}
+
+
+/* =====================================================
+   KLEUREN
+
+   ALS JE DE ORANJE KLEUR WILT VERANDEREN:
+
+   #ff5a1f
+
+   bijvoorbeeld naar:
+
+   #00aaff
+
+   ===================================================== */
+
+:root {
+
+    --orange: #ff5a1f;
+
+    --background: #08090c;
+
+    --card: #101319;
+
+    --border: #272b33;
+
+    --text: #ffffff;
+
+    --muted: #a7adb8;
+
+}
+
+
+
+/* =====================================================
+   NAVBAR
+   ===================================================== */
+
+.navbar {
+
+    height: 72px;
+
+    width: 100%;
+
+    background: #08090c;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 36px;
+
+    position: relative;
+
+    z-index: 1000;
+
+}
+
+
+/* LOGO */
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    width: 38px;
+
+    height: 45px;
+
+}
+
+
+.logo img {
+
+    width: 34px;
+
+    height: auto;
+
+    object-fit: contain;
+
+}
+
+
+
+/* RECHTERKANT */
+
+.navbar-right {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 36px;
+
+}
+
+
+
+/* =====================================================
+   THEME KNOP
+   ===================================================== */
+
+.theme-button {
+
+    width: 69px;
+
+    height: 37px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #222731;
+
+    cursor: pointer;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    padding-left: 6px;
+
+}
+
+
+.theme-icon {
+
+    width: 29px;
+
+    height: 29px;
+
+    border-radius: 50%;
+
+    background: var(--orange);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 16px;
+
+    color: #111;
+
+}
+
+
+
+/* =====================================================
+   HAMBURGER
+   ===================================================== */
+
+.menu-button {
+
+    width: 32px;
+
+    height: 28px;
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    padding: 3px 0;
+
+}
+
+
+.menu-button span {
+
+    width: 30px;
+
+    height: 3px;
+
+    background: var(--orange);
+
+    border-radius: 5px;
+
+}
+
+
+
+/* =====================================================
+   SIDE MENU
+   ===================================================== */
+
+.side-menu {
+
+    position: fixed;
+
+    top: 72px;
+
+    right: 0;
+
+    width: 280px;
+
+    background: #0c0e12;
+
+    border-left: 1px solid var(--border);
+
+    border-bottom: 1px solid var(--border);
+
+    padding: 20px;
+
+    z-index: 999;
+
+    transform: translateX(100%);
+
+    transition: 0.3s ease;
+
+}
+
+
+.side-menu.open {
+
+    transform: translateX(0);
+
+}
+
+
+.side-menu a {
+
+    display: block;
+
+    padding: 15px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    border-bottom: 1px solid #1d2027;
+
+}
+
+
+.side-menu a:hover {
+
+    color: var(--orange);
+
+}
+
+
+
+/* =====================================================
+   HERO
+   ===================================================== */
+
+.hero {
+
+    height: 530px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+
+/* ==========================================
+   HERO ACHTERGROND
+
+   HIER VERANDER JE DE GROTE FOTO
+   ========================================== */
+
+.hero-background {
+
+    position: absolute;
+
+    inset: 0;
+
+    background-image: url("images/faqzy-car.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+}
+
+
+
+/* ==========================================
+   DONKERE LAAG OVER DE FOTO
+   ========================================== */
+
+.hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(8, 9, 12, 0.94) 0%,
+            rgba(8, 9, 12, 0.70) 38%,
+            rgba(8, 9, 12, 0.20) 75%,
+            rgba(8, 9, 12, 0.15) 100%
+        );
+
+}
+
+
+
+/* EXTRA DONKERE BOVENKANT */
+
+.hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(8, 9, 12, 0.3),
+            transparent 30%,
+            rgba(8, 9, 12, 0.15)
+        );
+
+    pointer-events: none;
+
+}
+
+
+
+/* HERO INHOUD */
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 5;
+
+    width: 100%;
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding: 0 66px;
+
+}
+
+
+
+/* =====================================================
+   BACK BUTTON
+   ===================================================== */
+
+.back-button {
+
+    display: inline-block;
+
+    color: #dce0e6;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    margin-bottom: 25px;
+
+    text-decoration: none;
+
+}
+
+
+.back-button:hover {
+
+    color: var(--orange);
+
+}
+
+
+
+/* =====================================================
+   HERO TITEL
+   ===================================================== */
+
+.hero h1 {
+
+    font-family: "Barlow Condensed", sans-serif;
+
+    font-size: 76px;
+
+    font-weight: 900;
+
+    line-height: 0.95;
+
+    letter-spacing: -1px;
+
+    color: #f4f4f5;
+
+    margin-bottom: 23px;
+
+}
+
+
+.hero h1 span {
+
+    color: var(--orange);
+
+}
+
+
+
+/* =====================================================
+   HERO TEKST
+   ===================================================== */
+
+.hero-description {
+
+    max-width: 720px;
+
+    color: #d0d4db;
+
+    font-size: 20px;
+
+    line-height: 1.55;
+
+}
+
+
+
+/* =====================================================
+   NEWS CONTAINER
+   ===================================================== */
+
+.news-container {
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding: 90px 30px 100px;
+
+}
+
+
+
+/* =====================================================
+   LATEST NEWS TITEL
+   ===================================================== */
+
+.news-title {
+
+    font-family: "Barlow Condensed", sans-serif;
+
+    font-size: 66px;
+
+    line-height: 1;
+
+    font-weight: 900;
+
+    margin-bottom: 70px;
+
+    letter-spacing: -1px;
+
+    color: #f4f4f5;
+
+}
+
+
+.news-title span {
+
+    color: var(--orange);
+
+}
+
+
+
+/* =====================================================
+   NEWS GRID
+   ===================================================== */
+
+.news-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 32px;
+
+}
+
+
+
+/* =====================================================
+   NEWS CARD
+   ===================================================== */
+
+.news-card {
+
+    min-height: 298px;
+
+    background: #101319;
+
+    border: 1px solid #292d35;
+
+    border-radius: 6px;
+
+    padding: 32px 30px;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease;
+
+}
+
+
+.news-card:hover {
+
+    transform: translateY(-4px);
+
+    border-color: #3b404a;
+
+    background: #12151b;
+
+}
+
+
+
+/* =====================================================
+   ORANJE LABEL
+   ===================================================== */
+
+.news-tag {
+
+    display: inline-block;
+
+    background: var(--orange);
+
+    color: #08090c;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.2px;
+
+    padding: 7px 12px;
+
+    border-radius: 4px;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+/* =====================================================
+   NEWS TITEL
+   ===================================================== */
+
+.news-card h3 {
+
+    font-family: "Barlow Condensed", sans-serif;
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+    line-height: 1.1;
+
+    color: #f2f3f4;
+
+    margin-bottom: 16px;
+
+}
+
+
+
+/* =====================================================
+   NEWS TEKST
+   ===================================================== */
+
+.news-card p {
+
+    color: #aeb4bf;
+
+    font-size: 16px;
+
+    line-height: 1.65;
+
+    margin-bottom: 18px;
+
+}
+
+
+
+/* =====================================================
+   NEWS LINK
+   ===================================================== */
+
+.news-card a {
+
+    color: var(--orange);
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+}
+
+
+.news-card a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+
+/* =====================================================
+   LIGHT MODE
+   ===================================================== */
+
+body.light-mode {
+
+    background: #f1f1f1;
+
+    color: #111;
+
+}
+
+
+body.light-mode .navbar {
+
+    background: #ffffff;
+
+}
+
+
+body.light-mode .news-title {
+
+    color: #111;
+
+}
+
+
+body.light-mode .news-card {
+
+    background: #ffffff;
+
+    border-color: #d8d8d8;
+
+}
+
+
+body.light-mode .news-card h3 {
+
+    color: #111;
+
+}
+
+
+body.light-mode .news-card p {
+
+    color: #555;
+
+}
+
+
+
+/* =====================================================
+   TABLET
+   ===================================================== */
+
+@media (max-width: 950px) {
+
+    .news-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 62px;
+
+    }
+
+
+    .hero {
+
+        height: 500px;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   TELEFOON
+   ===================================================== */
+
+@media (max-width: 650px) {
+
+    .navbar {
+
+        height: 65px;
+
+        padding: 0 20px;
+
+    }
+
+
+    .navbar-right {
+
+        gap: 20px;
+
+    }
+
+
+    .hero {
+
+        height: 560px;
+
+        align-items: flex-end;
+
+    }
+
+
+    .hero-content {
+
+        padding: 0 25px 55px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 54px;
+
+    }
+
+
+    .hero-description {
+
+        font-size: 16px;
+
+    }
+
+
+    .news-container {
+
+        padding: 60px 20px;
+
+    }
+
+
+    .news-title {
+
+        font-size: 52px;
+
+        margin-bottom: 45px;
+
+    }
+
+
+    .news-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+    }
+
+
+    .news-card {
+
+        min-height: auto;
+
+    }
+
+}

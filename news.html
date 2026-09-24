@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ==========================================
+         HIER KUN JE DE PAGINA-TITEL VERANDEREN
+         ========================================== -->
+    <title>Faqzy League News</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Lettertypes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+     ===================================================== -->
+
+<header class="navbar">
+
+    <!-- ==========================================
+         LOGO
+
+         Vervang hieronder eventueel de afbeelding
+         door jouw eigen logo.
+         ========================================== -->
+
+    <a href="index.html" class="logo">
+
+        <img
+            src="images/logo.png"
+            alt="Faqzy League Logo"
+        >
+
+    </a>
+
+
+    <!-- RECHTERKANT NAVBAR -->
+
+    <div class="navbar-right">
+
+        <!-- DARK MODE KNOP -->
+
+        <button class="theme-button" onclick="toggleTheme()">
+
+            <span class="theme-icon">
+                ☀
+            </span>
+
+        </button>
+
+
+        <!-- HAMBURGER MENU -->
+
+        <button class="menu-button" onclick="toggleMenu()">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     MENU
+     ===================================================== -->
+
+<div id="menu" class="side-menu">
+
+    <a href="index.html">
+        Home
+    </a>
+
+    <a href="main-league.html">
+        Main League
+    </a>
+
+    <a href="champions-league.html">
+        Champions League
+    </a>
+
+    <a href="fashion-league.html">
+        Fashion League
+    </a>
+
+    <a href="esports-cup.html">
+        Esports Cup
+    </a>
+
+    <a href="world-cup.html">
+        World Cup
+    </a>
+
+    <a href="chaos-cup.html">
+        Chaos Cup
+    </a>
+
+    <a href="news.html">
+        League News
+    </a>
+
+</div>
+
+
+
+<!-- =====================================================
+     HERO
+     ===================================================== -->
+
+<section class="hero">
+
+
+    <!-- ==========================================
+         HERO AFBEELDING
+
+         HIER KUN JE DE GROTE AFBEELDING VERANDEREN.
+
+         Bijvoorbeeld:
+
+         images/faqzy-car.png
+
+         ========================================== -->
+
+    <div class="hero-background"></div>
+
+
+    <!-- DONKERE OVERLAY -->
+
+    <div class="hero-overlay"></div>
+
+
+    <div class="hero-content">
+
+
+        <!-- BACK BUTTON -->
+
+        <a href="index.html" class="back-button">
+            ← &nbsp; Back to Home
+        </a>
+
+
+        <!-- ==========================================
+             GROTE TITEL
+             ========================================== -->
+
+        <h1>
+
+            FAQZY LEAGUE
+            <span>NEWS</span>
+
+        </h1>
+
+
+        <!-- ==========================================
+             BESCHRIJVING
+             ========================================== -->
+
+        <p class="hero-description">
+
+            Results, winners and announcements from the Main League,
+            Champions League, Fashion League, Esports Cup, World Cup
+            and Chaos Cup, all in one place.
+
+        </p>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     NEWS
+     ===================================================== -->
+
+<main class="news-container">
+
+
+    <!-- ==========================================
+         PAGINA TITEL
+         ========================================== -->
+
+    <h2 class="news-title">
+
+        LATEST
+        <span>NEWS</span>
+
+    </h2>
+
+
+
+    <!-- =================================================
+         NIEUWS KAARTEN
+         ================================================= -->
+
+    <div class="news-grid">
+
+
+        <!-- ==========================================
+             MAIN LEAGUE
+             ========================================== -->
+
+        <article class="news-card">
+
+
+            <!-- LABEL -->
+
+            <div class="news-tag">
+                MAIN LEAGUE
+            </div>
+
+
+            <!-- TITEL -->
+
+            <h3>
+                RESULTS: COMING SOON
+            </h3>
+
+
+            <!-- TEKST -->
+
+            <p>
+
+                Check back here once the current Main League
+                season or tournament wraps up for the full
+                results and champion.
+
+            </p>
+
+
+            <!-- LINK -->
+
+            <a href="main-league.html">
+
+                View Main League →
+
+            </a>
+
+
+        </article>
+
+
+
+        <!-- ==========================================
+             CHAMPIONS LEAGUE
+             ========================================== -->
+
+        <article class="news-card">
+
+
+            <div class="news-tag">
+                CHAMPIONS LEAGUE
+            </div>
+
+
+            <h3>
+                RESULTS: COMING SOON
+            </h3>
+
+
+            <p>
+
+                Check back here once the current Champions League
+                season or tournament wraps up for the full
+                results and champion.
+
+            </p>
+
+
+            <a href="champions-league.html">
+
+                View Champions League →
+
+            </a>
+
+
+        </article>
+
+
+
+        <!-- ==========================================
+             FASHION LEAGUE
+             ========================================== -->
+
+        <article class="news-card">
+
+
+            <div class="news-tag">
+                FASHION LEAGUE
+            </div>
+
+
+            <h3>
+                RESULTS: COMING SOON
+            </h3>
+
+
+            <p>
+
+                Check back here once the current Fashion League
+                season or tournament wraps up for the full
+                results and champion.
+
+            </p>
+
+
+            <a href="fashion-league.html">
+
+                View Fashion League →
+
+            </a>
+
+
+        </article>
+
+
+
+        <!-- ==========================================
+             ESPORTS CUP
+             ========================================== -->
+
+        <article class="news-card">
+
+
+            <div class="news-tag">
+                ESPORTS CUP
+            </div>
+
+
+            <h3>
+                RESULTS: COMING SOON
+            </h3>
+
+
+            <p>
+
+                Check back here once the current Esports Cup
+                tournament wraps up for the full results
+                and champion.
+
+            </p>
+
+
+            <a href="esports-cup.html">
+
+                View Esports Cup →
+
+            </a>
+
+
+        </article>
+
+
+
+        <!-- ==========================================
+             WORLD CUP
+             ========================================== -->
+
+        <article class="news-card">
+
+
+            <div class="news-tag">
+                WORLD CUP
+            </div>
+
+
+            <h3>
+                RESULTS: COMING SOON
+            </h3>
+
+
+            <p>
+
+                Check back here once the current World Cup
+                tournament wraps up for the full results
+                and champion.
+
+            </p>
+
+
+            <a href="world-cup.html">
+
+                View World Cup →
+
+            </a>
+
+
+        </article>
+
+
+
+        <!-- ==========================================
+             CHAOS CUP
+             ========================================== -->
+
+        <article class="news-card">
+
+
+            <div class="news-tag">
+                CHAOS CUP
+            </div>
+
+
+            <h3>
+                RESULTS: COMING SOON
+            </h3>
+
+
+            <p>
+
+                Check back here once the current Chaos Cup
+                tournament wraps up for the full results
+                and champion.
+
+            </p>
+
+
+            <a href="chaos-cup.html">
+
+                View Chaos Cup →
+
+            </a>
+
+
+        </article>
+
+
+    </div>
+
+</main>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+     ===================================================== -->
+
+<script>
+
+
+/* ==========================================
+   HAMBURGER MENU
+   ========================================== */
+
+function toggleMenu() {
+
+    const menu = document.getElementById("menu");
+
+    menu.classList.toggle("open");
+
+}
+
+
+
+/* ==========================================
+   DARK / LIGHT MODE
+   ========================================== */
+
+function toggleTheme() {
+
+    document.body.classList.toggle("light-mode");
+
+}
+
+
+</script>
+
+
+</body>
+</html>
