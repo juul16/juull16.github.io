@@ -1141,6 +1141,132 @@ body.light-mode .competition-card p {
         width: 48px;
 
         height: 48px;
+
+        /* =====================================================
+   COMPETITION VAKKEN - TEST / FIX
+   ===================================================== */
+
+.competitions {
+    display: block !important;
+    width: 100% !important;
+    padding: 60px 30px 100px !important;
+    background: #08090c !important;
+}
+
+.competitions .section-container {
+    display: block !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+.competition-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 30px !important;
+    width: 100% !important;
+    margin-top: 40px !important;
+}
+
+.competition-card {
+    display: block !important;
+    width: 100% !important;
+    min-height: 290px !important;
+
+    padding: 30px !important;
+
+    background: #101319 !important;
+    border: 1px solid #353a44 !important;
+    border-radius: 8px !important;
+
+    color: white !important;
+    text-decoration: none !important;
+
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    position: relative !important;
+}
+
+.competition-label {
+    display: inline-block !important;
+
+    background: #ff5a1f !important;
+    color: #08090c !important;
+
+    padding: 7px 12px !important;
+
+    border-radius: 4px !important;
+
+    font-family: Arial, sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 800 !important;
+
+    margin-bottom: 20px !important;
+}
+
+.competition-card h3 {
+    display: block !important;
+
+    color: white !important;
+
+    font-family: "Barlow Condensed", Arial, sans-serif !important;
+    font-size: 24px !important;
+    font-weight: 900 !important;
+
+    margin: 0 0 15px 0 !important;
+}
+
+.competition-card p {
+    display: block !important;
+
+    color: #aeb4bf !important;
+
+    font-family: Arial, sans-serif !important;
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+
+    margin: 0 !important;
+}
+
+.competition-card a {
+    display: inline-block !important;
+
+    color: #ff5a1f !important;
+
+    font-family: Arial, sans-serif !important;
+    font-size: 15px !important;
+    font-weight: bold !important;
+
+    margin-top: 20px !important;
+
+    text-decoration: none !important;
+}
+
+
+/* TABLET */
+
+@media (max-width: 950px) {
+
+    .competition-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+}
+
+
+/* TELEFOON */
+
+@media (max-width: 650px) {
+
+    .competition-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .competitions {
+        padding: 50px 20px 70px !important;
+    }
+
+}
     }
 
 }
