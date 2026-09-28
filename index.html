@@ -31,29 +31,26 @@
 <header class="navbar">
 
     <!-- LOGO -->
-
     <a href="./index.html" class="logo">
 
         <!--
         HIER JE LOGO
 
-        Zet je afbeelding in:
-        images/logo.png
+        Als je logo in de images-map staat:
+        ./images/logo.png
         -->
 
         <img
-            src="logo.png"
+            src="./logo.png"
             alt="Juul's Website">
 
     </a>
 
 
     <!-- RECHTERKANT -->
-
     <div class="navbar-right">
 
         <!-- THEME BUTTON -->
-
         <button
             class="theme-button"
             onclick="toggleTheme()">
@@ -64,7 +61,6 @@
 
 
         <!-- MENU -->
-
         <button
             class="menu-button"
             onclick="toggleMenu()">
@@ -78,7 +74,6 @@
     </div>
 
 </header>
-
 
 
 <!-- ==================================================
@@ -122,31 +117,22 @@
 </div>
 
 
-
 <!-- ==================================================
      HERO / VOORKANT
      ================================================== -->
 
 <section class="home-hero">
 
-
     <!-- ACHTERGRONDAFBEELD -->
-
     <div class="home-hero-background"></div>
 
-
     <!-- DONKERE OVERLAY -->
-
     <div class="home-hero-overlay"></div>
 
-
     <!-- TEKST -->
-
     <div class="home-hero-content">
 
-
         <!-- KLEINE TEKST -->
-
         <div class="hero-label">
 
             <span></span>
@@ -156,10 +142,7 @@
         </div>
 
 
-        <!--
-        HIER KUN JE DE GROTE TITEL AANPASSEN
-        -->
-
+        <!-- GROTE TITEL -->
         <h1>
 
             JUUL'S
@@ -168,10 +151,7 @@
         </h1>
 
 
-        <!--
-        HIER KUN JE DE BESCHRIJVING AANPASSEN
-        -->
-
+        <!-- BESCHRIJVING -->
         <p>
 
             About me.
@@ -183,9 +163,7 @@
 
 
         <!-- KNOPPEN -->
-
         <div class="hero-buttons">
-
 
             <a
                 href="./main-league.html"
@@ -206,14 +184,11 @@
 
             </a>
 
-
         </div>
-
 
     </div>
 
 </section>
-
 
 
 <!-- ==================================================
@@ -222,9 +197,7 @@
 
 <section class="quick-section">
 
-
     <div class="section-container">
-
 
         <div class="section-heading">
 
@@ -243,12 +216,9 @@
         </div>
 
 
-
         <div class="quick-grid">
 
-
             <!-- MAIN LEAGUE -->
-
             <a
                 href="./main-league.html"
                 class="quick-card">
@@ -273,9 +243,7 @@
             </a>
 
 
-
             <!-- NEWS -->
-
             <a
                 href="./news.html"
                 class="quick-card">
@@ -300,9 +268,7 @@
             </a>
 
 
-
             <!-- CHAMPIONS -->
-
             <a
                 href="./champions-league.html"
                 class="quick-card">
@@ -326,7 +292,6 @@
 
             </a>
 
-
         </div>
 
     </div>
@@ -334,16 +299,13 @@
 </section>
 
 
-
 <!-- ==================================================
-     COMPETITIONS
+     COMPETITIONS / RESULTS
      ================================================== -->
 
 <section class="competitions">
 
-
     <div class="section-container">
-
 
         <div class="section-heading centered">
 
@@ -362,235 +324,157 @@
         </div>
 
 
-
         <div class="competition-grid">
 
 
-            <!-- MAIN LEAGUE -->
+            <!-- =========================================
+                 MAIN LEAGUE
+                 ========================================= -->
 
-            <a
-                href="./main-league.html"
-                class="competition-card">
+            <div class="competition-card">
 
-                <div class="competition-image">
+                <span class="competition-label">
+                    MAIN LEAGUE
+                </span>
 
-                    <img
-                        src="./rln banner.jpg"
-                        alt="Main League">
+                <h3>
+                    RESULTS: COMING SOON
+                </h3>
 
-                </div>
+                <p>
+                    Check back here once the current Main League season or tournament wraps up for the full results and champion.
+                </p>
 
-                <div class="competition-content">
+                <a href="./main-league.html">
+                    View Main League →
+                </a>
 
-                    <small>
-                        01
-                    </small>
+            </div>
 
-                    <h3>
-                        Main League
-                    </h3>
 
-                    <p>
-                        The main Faqzy League competition.
-                    </p>
+            <!-- =========================================
+                 CHAMPIONS LEAGUE
+                 ========================================= -->
 
-                    <strong>
-                        View League →
-                    </strong>
+            <div class="competition-card">
 
-                </div>
+                <span class="competition-label">
+                    CHAMPIONS LEAGUE
+                </span>
 
-            </a>
+                <h3>
+                    RESULTS: COMING SOON
+                </h3>
 
+                <p>
+                    Check back here once the current Champions League season or tournament wraps up for the full results and champion.
+                </p>
 
+                <a href="./champions-league.html">
+                    View Champions League →
+                </a>
 
-            <!-- CHAMPIONS LEAGUE -->
+            </div>
 
-            <a
-                href="./champions-league.html"
-                class="competition-card">
 
-                <div class="competition-image">
+            <!-- =========================================
+                 FASHION LEAGUE
+                 ========================================= -->
 
-                    <img
-                        src="./images/champions-league.png"
-                        alt="Champions League">
+            <div class="competition-card">
 
-                </div>
+                <span class="competition-label">
+                    FASHION LEAGUE
+                </span>
 
-                <div class="competition-content">
+                <h3>
+                    RESULTS: COMING SOON
+                </h3>
 
-                    <small>
-                        02
-                    </small>
+                <p>
+                    Check back here once the current Fashion League season or tournament wraps up for the full results and champion.
+                </p>
 
-                    <h3>
-                        Champions League
-                    </h3>
+                <a href="./fashion-league.html">
+                    View Fashion League →
+                </a>
 
-                    <p>
-                        Compete against the strongest teams.
-                    </p>
+            </div>
 
-                    <strong>
-                        View League →
-                    </strong>
 
-                </div>
+            <!-- =========================================
+                 ESPORTS CUP
+                 ========================================= -->
 
-            </a>
+            <div class="competition-card">
 
+                <span class="competition-label">
+                    ESPORTS CUP
+                </span>
 
+                <h3>
+                    RESULTS: COMING SOON
+                </h3>
 
-            <!-- FASHION LEAGUE -->
+                <p>
+                    Check back here once the current Esports Cup season or tournament wraps up for the full results and champion.
+                </p>
 
-            <a
-                href="./fashion-league.html"
-                class="competition-card">
+                <a href="./esports-cup.html">
+                    View Esports Cup →
+                </a>
 
-                <div class="competition-image">
+            </div>
 
-                    <img
-                        src="./images/fashion-league.png"
-                        alt="Fashion League">
 
-                </div>
+            <!-- =========================================
+                 WORLD CUP
+                 ========================================= -->
 
-                <div class="competition-content">
+            <div class="competition-card">
 
-                    <small>
-                        03
-                    </small>
+                <span class="competition-label">
+                    WORLD CUP
+                </span>
 
-                    <h3>
-                        Fashion League
-                    </h3>
+                <h3>
+                    RESULTS: COMING SOON
+                </h3>
 
-                    <p>
-                        A unique competition with a different style.
-                    </p>
+                <p>
+                    Check back here once the current World Cup season or tournament wraps up for the full results and champion.
+                </p>
 
-                    <strong>
-                        View League →
-                    </strong>
+                <a href="./world-cup.html">
+                    View World Cup →
+                </a>
 
-                </div>
+            </div>
 
-            </a>
 
+            <!-- =========================================
+                 CHAOS CUP
+                 ========================================= -->
 
+            <div class="competition-card">
 
-            <!-- ESPORTS CUP -->
+                <span class="competition-label">
+                    CHAOS CUP
+                </span>
 
-            <a
-                href="./esports-cup.html"
-                class="competition-card">
+                <h3>
+                    RESULTS: COMING SOON
+                </h3>
 
-                <div class="competition-image">
+                <p>
+                    Check back here once the current Chaos Cup season or tournament wraps up for the full results and champion.
+                </p>
 
-                    <img
-                        src="./images/esports-cup.png"
-                        alt="Esports Cup">
+                <a href="./chaos-cup.html">
+                    View Chaos Cup →
+                </a>
 
-                </div>
-
-                <div class="competition-content">
-
-                    <small>
-                        04
-                    </small>
-
-                    <h3>
-                        Esports Cup
-                    </h3>
-
-                    <p>
-                        Battle your way through the Esports Cup.
-                    </p>
-
-                    <strong>
-                        View Cup →
-                    </strong>
-
-                </div>
-
-            </a>
-
-
-
-            <!-- WORLD CUP -->
-
-            <a
-                href="./world-cup.html"
-                class="competition-card">
-
-                <div class="competition-image">
-
-                    <img
-                        src="./images/world-cup.png"
-                        alt="World Cup">
-
-                </div>
-
-                <div class="competition-content">
-
-                    <small>
-                        05
-                    </small>
-
-                    <h3>
-                        World Cup
-                    </h3>
-
-                    <p>
-                        Represent your country.
-                    </p>
-
-                    <strong>
-                        View Cup →
-                    </strong>
-
-                </div>
-
-            </a>
-
-
-
-            <!-- CHAOS CUP -->
-
-            <a
-                href="./chaos-cup.html"
-                class="competition-card">
-
-                <div class="competition-image">
-
-                    <img
-                        src="./images/chaos-cup.png"
-                        alt="Chaos Cup">
-
-                </div>
-
-                <div class="competition-content">
-
-                    <small>
-                        06
-                    </small>
-
-                    <h3>
-                        Chaos Cup
-                    </h3>
-
-                    <p>
-                        Expect the unexpected.
-                    </p>
-
-                    <strong>
-                        View Cup →
-                    </strong>
-
-                </div>
-
-            </a>
+            </div>
 
 
         </div>
@@ -600,13 +484,11 @@
 </section>
 
 
-
 <!-- ==================================================
      FOOTER
      ================================================== -->
 
 <footer class="site-footer">
-
 
     <div class="footer-shapes">
 
@@ -620,7 +502,6 @@
 
 
     <div class="footer-content">
-
 
         <div class="footer-column">
 
@@ -707,9 +588,7 @@
 
     </button>
 
-
 </footer>
-
 
 
 <!-- ==================================================
