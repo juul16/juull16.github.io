@@ -1,5 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Faqzy Esports</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Lettertypes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
 <!-- ==================================================
-     FOOTER
+     NAVBAR
+     ================================================== -->
+
+<header class="navbar">
+
+    <!-- LOGO -->
+    <a href="./index.html" class="logo">
+
+        <img
+            src="./logo.png"
+            alt="Faqzy Esports">
+
+    </a>
+
+
+    <!-- RECHTERKANT -->
+    <div class="navbar-right">
+
+        <!-- THEME BUTTON -->
+        <button
+            class="theme-button"
+            onclick="toggleTheme()">
+
+            ☀
+
+        </button>
+
+
+        <!-- MENU -->
+        <button
+            class="menu-button"
+            onclick="toggleMenu()">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- ==================================================
+     RECHTER MENU
+     ================================================== -->
+
+<div id="menu" class="side-menu">
+
+    <a href="./index.html">
+        Home
+    </a>
+
+    <a href="./abtme.html">
+        About Me
+    </a>
+
+    <a href="./rocketleague.html">
+        Rocket League
+    </a>
+
+    <a href="./binairstelsel.html">
+        Binary System
+    </a>
+
+    <a href="./ai.html">
+        AI
+    </a>
+
+    <a href="./faqzyleague.html">
+        Faqzy League
+    </a>
+
+    <a href="./faqzyesports.html">
+        Faqzy Esports
+    </a>
+
+    <a href="./news.html">
+        League & Esport News
+    </a>
+
+</div>
+
+
+<!-- ==================================================
+     BANNER / AFBEELDING
+     
+     VERANDER ALLEEN DE AFBEELDING PER PAGINA
+     ================================================== -->
+
+<section class="page-banner">
+
+    <img
+        src="./banner.jpg"
+        alt="Page banner">
+
+</section>
+
+
+<!-- ==================================================
+     PAGINA-INHOUD
+     
+     HIER KOMT DE UNIEKE INHOUD VAN DE PAGINA
+     ================================================== -->
+
+<main class="page-content">
+
+    <div class="section-container">
+
+        <div class="section-heading">
+
+            <span>
+                PAGE
+            </span>
+
+            <h1>
+                Pagina titel
+            </h1>
+
+            <p>
+                Hier komt de tekst van deze pagina.
+            </p>
+
+        </div>
+
+
+        <!--
+        HIER KUN JE AL JE EIGEN INHOUD ZETTEN.
+
+        Bijvoorbeeld:
+
+        <h2>Mijn titel</h2>
+
+        <p>
+            Mijn tekst...
+        </p>
+
+        <img src="./afbeelding.jpg" alt="Beschrijving">
+        -->
+
+    </div>
+
+</main>
+
+
+<!-- ==================================================
+     FOOTER / SITEMAP
      ================================================== -->
 
 <footer class="site-footer">
@@ -17,6 +190,7 @@
 
     <div class="footer-content">
 
+        <!-- SITEMAP -->
         <div class="footer-column">
 
             <h3>
@@ -58,6 +232,7 @@
         </div>
 
 
+        <!-- SOCIALS -->
         <div class="footer-socials">
 
             <h3>
@@ -85,6 +260,7 @@
     </div>
 
 
+    <!-- FOOTER BOTTOM -->
     <div class="footer-bottom">
 
         <p>
@@ -94,6 +270,7 @@
     </div>
 
 
+    <!-- BACK TO TOP -->
     <button
         class="back-to-top"
         onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
@@ -132,4 +309,3 @@ function toggleTheme() {
 </body>
 
 </html>
-
