@@ -20,7 +20,7 @@ body {
 }
 
 :root {
-    --orange: #e76dfa;
+    --orange: #ff00cc;
     --background: #08090c;
     --card: #101319;
     --border: #272b33;
@@ -151,7 +151,7 @@ body {
 
     width: 280px;
 
-    background: #e76dfa;
+    background: #ff00cc;
 
     border-left: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
@@ -375,7 +375,7 @@ body {
 }
 
 .orange-button:hover {
-    background: #e76dfa;
+    background: #ff00cc;
 
     transform: translateY(-2px);
 }
@@ -761,7 +761,7 @@ body.light-mode .competition-card p {
 
     min-height: 630px;
 
-    background: #e76dfa;
+    background: #ff00cc;
 
     color: #090a0d;
 
@@ -914,7 +914,7 @@ body.light-mode .competition-card p {
 
     top: 185px;
 
-    background: #e76dfa;
+    background: #ff00cc;
 }
 
 
@@ -925,7 +925,7 @@ body.light-mode .competition-card p {
 
     top: 350px;
 
-    background: #e76dfa;
+    background: #ff00cc;
 }
 
 
@@ -1190,7 +1190,7 @@ body.light-mode .competition-card p {
 .competition-label {
     display: inline-block !important;
 
-    background: #e76dfa !important;
+    background: #ff00cc; !important;
     color: #08090c !important;
 
     padding: 7px 12px !important;
@@ -1231,7 +1231,7 @@ body.light-mode .competition-card p {
 .competition-card a {
     display: inline-block !important;
 
-    color: #e76dfa !important;
+    color: #ff00cc !important;
 
     font-family: Arial, sans-serif !important;
     font-size: 15px !important;
