@@ -1,140 +1,208 @@
-<p><i>Navigate to https://games.penjee.com/binary-bonanza/ for a fun game about the binary system</i></p>
+```html
+<!DOCTYPE html>
+<html lang="en">
 
-<iframe src="https://games.penjee.com/binary-bonanza/game.php" width="700" height="500" frameborder="no" scrolling="no" ></iframe>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<p><b>In this video we will explain how the binary system works</b></p>
+    <title>Binary System - Juul's Website</title>
 
-<!-- ==================================================
-     FOOTER
-     ================================================== -->
+    <link rel="stylesheet" href="./style.css">
 
-<footer class="site-footer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <div class="footer-shapes">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-        <div class="shape shape-1"></div>
+    <style>
+        .page-image img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
 
-        <div class="shape shape-2"></div>
+        .binary-content {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
 
-        <div class="shape shape-3"></div>
+        .binary-content iframe {
+            max-width: 100%;
+        }
+
+        .binary-content p {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <a href="./index.html" class="logo">
+            <img src="./logo.png" alt="Juul's Website">
+        </a>
+
+        <div class="navbar-right">
+
+            <button
+                class="theme-button"
+                onclick="toggleTheme()"
+                aria-label="Toggle light or dark mode">
+                ☀
+            </button>
+
+            <button
+                class="menu-button"
+                onclick="toggleMenu()"
+                aria-label="Open navigation menu">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- MENU -->
+    <div id="menu" class="side-menu">
+
+        <a href="./index.html">Home</a>
+        <a href="./abtme.html">About Me</a>
+        <a href="./rocketleague.html">Rocket League</a>
+        <a href="./binairstelsel.html">Binary System</a>
+        <a href="./ai.html">AI</a>
+        <a href="./faqzyleague.html">Faqzy League</a>
+        <a href="./faqzyesports.html">Faqzy Esports</a>
+        <a href="./news.html">League &amp; Esport News</a>
 
     </div>
 
 
-    <div class="footer-content">
+    <!-- AFBEELDING ONDER DE BALK -->
+    <div class="page-image">
 
-        <div class="footer-column">
+        <img
+            src="./faqzyleaguecar.png"
+            alt="Faqzy League">
 
-            <h3>
-                SITEMAP
-            </h3>
+    </div>
 
-            <a href="./index.html">
-                Home
+
+    <!-- BINARY SYSTEM CONTENT -->
+    <main class="binary-content">
+
+        <h1>Binary System</h1>
+
+        <p>
+            Navigate to
+            <a href="https://games.penjee.com/binary-bonanza/" target="_blank" rel="noopener noreferrer">
+                Penjee Binary Bonanza
             </a>
+            for a fun game about the binary system.
+        </p>
 
-            <a href="./faqzyleague.html">
-                Faqzy League
-            </a>
+        <!-- BINARY GAME -->
+        <iframe
+            src="https://games.penjee.com/binary-bonanza/game.php"
+            width="700"
+            height="500"
+            style="border: none;"
+            scrolling="no"
+            title="Binary Bonanza game">
+        </iframe>
 
-            <a href="./abtme.html">
-                About Me
-            </a>
+        <p>
+            <b>In this video we will explain how the binary system works.</b>
+        </p>
 
-            <a href="./ai.html">
-                AI
-            </a>
+        <!-- ADD YOUR VIDEO HERE -->
 
-            <a href="./faqzyesports.html">
-                Faqzy Esports
-            </a>
+    </main>
 
-            <a href="./binairstelsel.html">
-                Binary System
-            </a>
 
-            <a href="./news.html">
-                League & Esport News
-            </a>
+    <!-- FOOTER / SITEMAP -->
+    <footer class="site-footer">
 
-            <a href="./rocketleague.html">
-                Rocket League
-            </a>
+        <div class="footer-shapes">
+
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
 
         </div>
 
+        <div class="footer-content">
 
-        <div class="footer-socials">
+            <div class="footer-column">
 
-            <h3>
-                SOCIALS
-            </h3>
+                <h3>SITEMAP</h3>
 
-            <div class="social-icons">
+                <a href="./index.html">Home</a>
+                <a href="./faqzyleague.html">Faqzy League</a>
+                <a href="./abtme.html">About Me</a>
+                <a href="./ai.html">AI</a>
+                <a href="./faqzyesports.html">Faqzy Esports</a>
+                <a href="./binairstelsel.html">Binary System</a>
+                <a href="./news.html">League &amp; Esport News</a>
+                <a href="./rocketleague.html">Rocket League</a>
 
-                <a href="#" class="social-icon">
-                    Discord
-                </a>
+            </div>
 
-                <a href="#" class="social-icon">
-                    Twitch
-                </a>
+            <div class="footer-socials">
 
-                <a href="#" class="social-icon">
-                    YouTube
-                </a>
+                <h3>SOCIALS</h3>
+
+                <div class="social-icons">
+
+                    <a href="#" class="social-icon">Discord</a>
+                    <a href="#" class="social-icon">Twitch</a>
+                    <a href="#" class="social-icon">YouTube</a>
+
+                </div>
 
             </div>
 
         </div>
 
-    </div>
+        <div class="footer-bottom">
+
+            <p>© 2026 Juull16. All rights reserved.</p>
+
+        </div>
+
+        <button
+            class="back-to-top"
+            onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+            aria-label="Back to top">
+            ↑
+        </button>
+
+    </footer>
 
 
-    <div class="footer-bottom">
+    <!-- JAVASCRIPT -->
+    <script>
 
-        <p>
-            © 2026 Juull16. All rights reserved.
-        </p>
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("open");
+        }
 
-    </div>
+        function toggleTheme() {
+            document.body.classList.toggle("light-mode");
+        }
 
-
-    <button
-        class="back-to-top"
-        onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-
-        ↑
-
-    </button>
-
-</footer>
-
-
-<!-- ==================================================
-     JAVASCRIPT
-     ================================================== -->
-
-<script>
-
-function toggleMenu() {
-
-    const menu = document.getElementById("menu");
-
-    menu.classList.toggle("open");
-
-}
-
-
-function toggleTheme() {
-
-    document.body.classList.toggle("light-mode");
-
-}
-
-</script>
-
+    </script>
 
 </body>
-
 </html>
+```
