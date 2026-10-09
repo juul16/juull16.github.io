@@ -1267,6 +1267,171 @@ body.light-mode .competition-card p {
     }
 
 }
+
+/* =========================================
+   BINARY SYSTEM - BINARY BONANZA
+   ========================================= */
+
+/* Inhoud van de Binary System-pagina */
+.binary-content {
+    width: 100%;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 30px;
+}
+
+/* Titel en introductie */
+.binary-content > .section-heading {
+    margin-bottom: 35px;
+}
+
+/* Binary Bonanza-kaart */
+.binary-content .quick-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.binary-content .quick-card {
+    min-height: 250px;
+    padding: 30px;
+    background: #101319;
+    border: 1px solid #292d35;
+    border-radius: 8px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.binary-content .quick-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--orange);
+}
+
+.binary-content .quick-card h3 {
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.binary-content .quick-card p {
+    color: #aeb4bf;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.binary-content .quick-card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--orange);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.binary-content .quick-card a:hover {
+    color: #ffffff;
+}
+
+/* Game-vak */
+.binary-game {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    text-align: center;
+    background: #101319;
+    border: 1px solid #292d35;
+    border-radius: 8px;
+    transition: border-color 0.2s ease;
+}
+
+.binary-game:hover {
+    border-color: var(--orange);
+}
+
+.binary-game h2,
+.binary-video h2 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.binary-game p,
+.binary-video p {
+    color: #aeb4bf;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* Game zelf */
+.binary-game iframe {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: 500px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 8px;
+    background: #ffffff;
+}
+
+/* Video-vak */
+.binary-video {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    text-align: center;
+    background: #101319;
+    border: 1px solid #292d35;
+    border-radius: 8px;
+}
+
+/* Light mode */
+body.light-mode .binary-game,
+body.light-mode .binary-video,
+body.light-mode .binary-content .quick-card {
+    background: #ffffff;
+    border-color: #d8d8d8;
+}
+
+body.light-mode .binary-content .quick-card h3,
+body.light-mode .binary-game h2,
+body.light-mode .binary-video h2 {
+    color: #111111;
+}
+
+body.light-mode .binary-content .quick-card p,
+body.light-mode .binary-game p,
+body.light-mode .binary-video p {
+    color: #555555;
+}
+
+/* Tablet */
+@media (max-width: 950px) {
+    .binary-content .quick-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Telefoon */
+@media (max-width: 650px) {
+    .binary-content {
+        padding: 20px;
+        margin: 25px auto;
+    }
+
+    .binary-content .quick-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .binary-game,
+    .binary-video {
+        padding: 18px;
+        margin: 25px auto;
+    }
+
+    .binary-game iframe {
+        height: 400px;
+    }
+}
+
     }
 
 }
