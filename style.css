@@ -1432,6 +1432,39 @@ body.light-mode .binary-video p {
     }
 }
 
+.info-box {
+    background: linear-gradient(135deg, #171717, #202020);
+    border: 1px solid #303030;
+    border-left: 4px solid #b38cff;
+    border-radius: 10px;
+    padding: 28px;
+    margin: 25px 0;
+    color: white;
+}
+
+.info-label {
+    color: #b38cff;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.info-box h2 {
+    font-size: 26px;
+    margin: 12px 0;
+}
+
+.info-line {
+    height: 1px;
+    background: #383838;
+    margin: 18px 0;
+}
+
+.info-box p {
+    color: #bdbdbd;
+    line-height: 1.8;
+    margin: 0;
+}
     }
 
 }
