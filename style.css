@@ -1,1477 +1,2949 @@
 /* =====================================================
+
    BASIS
+
    ===================================================== */
 
+
+
 * {
+
     margin: 0;
+
     padding: 0;
+
     box-sizing: border-box;
+
 }
+
+
 
 html {
+
     scroll-behavior: smooth;
+
 }
+
+
 
 body {
+
     background: #08090c;
+
     color: #ffffff;
+
     font-family: "Inter", Arial, sans-serif;
+
     min-height: 100vh;
+
 }
 
+
+
 :root {
+
     --orange: #ff00cc;
+
     --background: #08090c;
+
     --card: #101319;
+
     --border: #272b33;
+
     --text: #ffffff;
+
     --muted: #a7adb8;
+
 }
+
+
+
 
 
 /* =====================================================
+
    NAVBAR
+
    ===================================================== */
 
+
+
 .navbar {
+
     height: 72px;
+
     width: 100%;
+
+
 
     background: #08090c;
 
+
+
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
+
+
 
     padding: 0 36px;
 
+
+
     position: relative;
+
     z-index: 1000;
+
 }
+
+
+
 
 
 /* LOGO */
 
+
+
 .logo {
+
     display: flex;
+
     align-items: center;
 
+
+
     width: 38px;
+
     height: 45px;
+
 }
+
+
 
 .logo img {
+
     width: 34px;
+
     height: auto;
 
+
+
     object-fit: contain;
+
 }
+
+
+
 
 
 /* RECHTERKANT */
 
+
+
 .navbar-right {
+
     display: flex;
+
     align-items: center;
+
     gap: 36px;
+
 }
 
 
+
+
+
 /* =====================================================
+
    THEME KNOP
+
    ===================================================== */
 
+
+
 .theme-button {
+
     width: 69px;
+
     height: 37px;
 
+
+
     border: none;
+
     border-radius: 30px;
+
+
 
     background: #222731;
 
+
+
     cursor: pointer;
+
+
 
     position: relative;
 
+
+
     display: flex;
+
     align-items: center;
+
     justify-content: flex-start;
+
+
 
     padding-left: 6px;
 
+
+
     color: white;
+
     font-size: 17px;
+
 }
 
+
+
 .theme-button:hover {
+
     background: #2c313c;
+
 }
+
+
+
 
 
 /* =====================================================
+
    HAMBURGER
+
    ===================================================== */
 
+
+
 .menu-button {
+
     width: 32px;
+
     height: 28px;
 
+
+
     border: none;
+
     background: transparent;
+
+
 
     cursor: pointer;
 
+
+
     display: flex;
+
     flex-direction: column;
+
     justify-content: space-between;
 
+
+
     padding: 3px 0;
+
 }
 
+
+
 .menu-button span {
+
     width: 30px;
+
     height: 3px;
+
+
 
     background: var(--orange);
 
+
+
     border-radius: 5px;
+
 }
 
 
+
+
+
 /* =====================================================
+
    SIDE MENU
+
    ===================================================== */
 
+
+
 .side-menu {
+
     position: fixed;
 
+
+
     top: 72px;
+
     right: 0;
+
+
 
     width: 280px;
 
+
+
     background: #ff00cc;
 
+
+
     border-left: 1px solid var(--border);
+
     border-bottom: 1px solid var(--border);
+
+
 
     padding: 20px;
 
+
+
     z-index: 999;
+
+
 
     transform: translateX(100%);
 
+
+
     transition: 0.3s ease;
+
 }
+
+
 
 .side-menu.open {
+
     transform: translateX(0);
+
 }
 
+
+
 .side-menu a {
+
     display: block;
+
+
 
     padding: 15px;
 
+
+
     color: #ffffff;
+
+
 
     text-decoration: none;
 
+
+
     font-weight: 600;
+
+
 
     border-bottom: 1px solid #1d2027;
 
+
+
     transition: 0.2s ease;
+
 }
 
+
+
 .side-menu a:hover {
+
     color: var(--orange);
+
     padding-left: 20px;
+
 }
+
+
+
 
 
 /* =====================================================
+
    HOME HERO
+
    ===================================================== */
 
+
+
 .home-hero {
+
     height: 560px;
+
+
 
     position: relative;
 
+
+
     overflow: hidden;
 
+
+
     display: flex;
+
     align-items: center;
+
 }
+
+
+
 
 
 /* ACHTERGROND */
 
+
+
 .home-hero-background {
+
     position: absolute;
+
+
 
     inset: 0;
 
+
+
     background-image: url("./pinkfaqzycar.png");
+
+
 
     background-size: cover;
 
+
+
     background-position: center;
 
+
+
     background-repeat: no-repeat;
+
 }
+
+
+
 
 
 /* DONKERE OVERLAY */
 
+
+
 .home-hero-overlay {
+
     position: absolute;
+
+
 
     inset: 0;
 
+
+
     background:
+
         linear-gradient(
+
             90deg,
+
             rgba(8, 9, 12, 0.95) 0%,
+
             rgba(8, 9, 12, 0.72) 38%,
+
             rgba(8, 9, 12, 0.28) 72%,
+
             rgba(8, 9, 12, 0.15) 100%
+
         );
+
 }
+
+
+
 
 
 /* HERO CONTENT */
 
+
+
 .home-hero-content {
+
     position: relative;
+
+
 
     z-index: 5;
 
+
+
     width: 100%;
+
+
 
     max-width: 1250px;
 
+
+
     margin: auto;
 
+
+
     padding: 0 66px;
+
 }
+
+
+
 
 
 /* WELCOME TO */
 
+
+
 .hero-label {
+
     display: flex;
+
+
 
     align-items: center;
 
+
+
     gap: 10px;
+
+
 
     color: #ffffff;
 
+
+
     font-size: 15px;
+
+
 
     font-weight: 800;
 
+
+
     letter-spacing: 1px;
 
+
+
     margin-bottom: 20px;
+
 }
+
+
 
 .hero-label span {
+
     display: block;
 
+
+
     width: 28px;
+
     height: 3px;
 
+
+
     background: var(--orange);
+
 }
+
+
+
 
 
 /* HERO TITEL */
 
+
+
 .home-hero h1 {
+
     font-family: "Barlow Condensed", sans-serif;
+
+
 
     font-size: 86px;
 
+
+
     font-weight: 900;
+
+
 
     line-height: 0.92;
 
+
+
     letter-spacing: -1px;
+
+
 
     color: #f4f4f5;
 
+
+
     margin-bottom: 25px;
+
 }
 
+
+
 .home-hero h1 span {
+
     color: var(--orange);
+
 }
+
+
+
 
 
 /* HERO TEKST */
 
+
+
 .home-hero-content > p {
+
     max-width: 650px;
+
+
 
     color: #d0d4db;
 
+
+
     font-size: 18px;
+
+
 
     line-height: 1.6;
 
+
+
     margin-bottom: 30px;
+
 }
+
+
+
 
 
 /* =====================================================
+
    HERO BUTTONS
+
    ===================================================== */
 
+
+
 .hero-buttons {
+
     display: flex;
 
+
+
     align-items: center;
+
+
 
     gap: 15px;
+
 }
 
+
+
 .orange-button,
+
 .outline-button {
+
     display: inline-flex;
 
+
+
     align-items: center;
+
     justify-content: center;
+
+
 
     min-height: 48px;
 
+
+
     padding: 0 22px;
+
+
 
     border-radius: 4px;
 
+
+
     font-size: 15px;
+
+
 
     font-weight: 700;
 
+
+
     text-decoration: none;
 
+
+
     transition: 0.2s ease;
+
 }
+
+
+
 
 
 /* ORANJE BUTTON */
 
+
+
 .orange-button {
+
     background: var(--orange);
 
+
+
     color: #08090c;
+
 }
+
+
 
 .orange-button span {
+
     margin-left: 10px;
+
 }
+
+
 
 .orange-button:hover {
+
     background: #ff00cc;
 
+
+
     transform: translateY(-2px);
+
 }
+
+
+
 
 
 /* OUTLINE BUTTON */
 
+
+
 .outline-button {
+
     border: 1px solid #646974;
+
+
 
     color: #ffffff;
 
+
+
     background: rgba(0, 0, 0, 0.15);
+
 }
+
+
 
 .outline-button:hover {
+
     border-color: var(--orange);
 
+
+
     color: var(--orange);
+
 }
 
 
+
+
+
 /* =====================================================
+
    QUICK SECTION
+
    ===================================================== */
+
+
 
 .quick-section {
+
     background: #08090c;
 
+
+
     padding: 90px 30px 80px;
+
 }
+
+
 
 .section-container {
+
     max-width: 1200px;
 
+
+
     margin: 0 auto;
+
 }
+
+
+
 
 
 /* =====================================================
+
    SECTION HEADINGS
+
    ===================================================== */
 
+
+
 .section-heading {
+
     margin-bottom: 45px;
+
 }
+
+
 
 .section-heading.centered {
+
     text-align: center;
+
 }
 
+
+
 .section-heading > span {
+
     display: inline-block;
 
+
+
     color: var(--orange);
+
+
 
     font-size: 14px;
 
+
+
     font-weight: 800;
+
+
 
     letter-spacing: 1px;
 
+
+
     margin-bottom: 10px;
+
 }
 
+
+
 .section-heading h2 {
+
     font-family: "Barlow Condensed", sans-serif;
+
+
 
     font-size: 52px;
 
+
+
     line-height: 1;
+
+
 
     font-weight: 900;
 
+
+
     color: #f4f4f5;
 
+
+
     margin-bottom: 14px;
+
 }
 
+
+
 .section-heading p {
+
     color: #aeb4bf;
+
+
 
     font-size: 16px;
 
+
+
     line-height: 1.6;
+
 }
+
+
+
 
 
 /* =====================================================
+
    QUICK GRID
+
    ===================================================== */
 
+
+
 .quick-grid {
+
     display: grid;
+
+
 
     grid-template-columns: repeat(3, 1fr);
 
+
+
     gap: 25px;
+
 }
+
+
+
 
 
 /* QUICK CARD */
 
+
+
 .quick-card {
+
     display: block;
+
+
 
     min-height: 250px;
 
+
+
     padding: 30px;
+
+
 
     background: #101319;
 
+
+
     border: 1px solid #292d35;
+
+
 
     border-radius: 6px;
 
+
+
     text-decoration: none;
 
+
+
     transition: 0.2s ease;
+
 }
+
+
 
 .quick-card:hover {
+
     transform: translateY(-3px);
 
+
+
     border-color: var(--orange);
+
 }
+
+
+
 
 
 /* ICON */
 
+
+
 .quick-icon {
+
     font-size: 28px;
 
+
+
     margin-bottom: 20px;
+
 }
+
+
+
 
 
 /* TITLE */
 
+
+
 .quick-card h3 {
+
     font-family: "Barlow Condensed", sans-serif;
+
+
 
     font-size: 26px;
 
+
+
     font-weight: 900;
+
+
 
     color: #ffffff;
 
+
+
     margin-bottom: 12px;
+
 }
+
+
+
 
 
 /* TEXT */
 
+
+
 .quick-card p {
+
     color: #aeb4bf;
+
+
 
     font-size: 15px;
 
+
+
     line-height: 1.6;
 
+
+
     margin-bottom: 18px;
+
 }
+
+
+
 
 
 /* LINK */
 
+
+
 .quick-card strong {
+
     color: var(--orange);
 
+
+
     font-size: 15px;
+
 }
 
 
+
+
+
 /* =====================================================
+
    COMPETITIONS
+
    ===================================================== */
+
+
 
 .competitions {
+
     background: var(--background);
 
+
+
     padding: 40px 30px 100px;
+
 }
+
+
 
 .competitions .section-container {
+
     max-width: 1200px;
 
+
+
     margin: 0 auto;
+
 }
+
+
+
 
 
 /* =====================================================
+
    COMPETITION GRID
+
    ===================================================== */
 
+
+
 .competition-grid {
+
     display: grid;
+
+
 
     grid-template-columns: repeat(3, 1fr);
 
+
+
     gap: 32px;
 
+
+
     margin-top: 50px;
+
 }
+
+
+
 
 
 /* =====================================================
+
    COMPETITION CARD / VAKJE
+
    ===================================================== */
 
+
+
 .competition-card {
+
     display: block;
+
+
 
     min-height: 296px;
 
+
+
     padding: 32px 30px;
+
+
 
     background: #101319;
 
+
+
     border: 1px solid #292d35;
+
+
 
     border-radius: 6px;
 
+
+
     box-sizing: border-box;
+
+
 
     text-decoration: none;
 
+
+
     transition:
+
         transform 0.2s ease,
+
         border-color 0.2s ease,
+
         background 0.2s ease;
+
 }
+
+
+
 
 
 /* HOVER */
 
+
+
 .competition-card:hover {
+
     transform: translateY(-3px);
+
+
 
     border-color: #3b404a;
 
+
+
     background: #12151b;
+
 }
 
 
+
+
+
 /* =====================================================
+
    ORANJE LABEL
+
    ===================================================== */
 
+
+
 .competition-label {
+
     display: inline-block;
+
+
 
     background: var(--orange);
 
+
+
     color: #08090c;
 
+
+
     font-family: "Inter", Arial, sans-serif;
+
+
 
     font-size: 13px;
 
+
+
     font-weight: 800;
+
+
 
     letter-spacing: 0.2px;
 
+
+
     padding: 7px 12px;
+
+
 
     border-radius: 4px;
 
+
+
     margin-bottom: 20px;
+
 }
 
 
+
+
+
 /* =====================================================
+
    RESULTS: COMING SOON
+
    ===================================================== */
 
+
+
 .competition-card h3 {
+
     margin: 0 0 12px 0;
+
+
 
     color: #f2f3f4;
 
+
+
     font-family: "Barlow Condensed", sans-serif;
+
+
 
     font-size: 22px;
 
+
+
     font-weight: 900;
 
+
+
     line-height: 1.1;
+
 }
 
 
+
+
+
 /* =====================================================
+
    COMPETITION BESCHRIJVING
+
    ===================================================== */
 
+
+
 .competition-card p {
+
     margin: 0;
+
+
 
     max-width: 340px;
 
+
+
     color: #aeb4bf;
+
+
 
     font-family: "Inter", Arial, sans-serif;
 
+
+
     font-size: 16px;
 
+
+
     line-height: 1.65;
+
 }
 
 
+
+
+
 /* =====================================================
+
    COMPETITION LINK
+
    ===================================================== */
 
+
+
 .competition-card a {
+
     display: inline-block;
+
+
 
     margin-top: 18px;
 
+
+
     color: var(--orange);
+
+
 
     font-family: "Inter", Arial, sans-serif;
 
+
+
     font-size: 16px;
+
+
 
     font-weight: 700;
 
+
+
     text-decoration: none;
+
 }
+
+
 
 .competition-card a:hover {
+
     color: #ffffff;
+
 }
 
 
+
+
+
 /* =====================================================
+
    LIGHT MODE
+
    ===================================================== */
+
+
 
 body.light-mode {
+
     background: #f1f1f1;
 
+
+
     color: #111111;
+
 }
+
+
 
 body.light-mode .navbar {
+
     background: #ffffff;
+
 }
+
+
 
 body.light-mode .quick-section,
+
 body.light-mode .competitions {
+
     background: #f1f1f1;
+
 }
+
+
 
 body.light-mode .section-heading h2 {
+
     color: #111111;
+
 }
+
+
 
 body.light-mode .quick-card,
+
 body.light-mode .competition-card {
+
     background: #ffffff;
 
+
+
     border-color: #d8d8d8;
+
 }
+
+
 
 body.light-mode .quick-card h3,
+
 body.light-mode .competition-card h3 {
+
     color: #111111;
+
 }
 
+
+
 body.light-mode .quick-card p,
+
 body.light-mode .competition-card p {
+
     color: #555555;
+
 }
+
+
+
 
 
 /* =====================================================
+
    FOOTER
+
    ===================================================== */
 
+
+
 .site-footer {
+
     position: relative;
+
+
 
     min-height: 630px;
 
+
+
     background: #ff00cc;
+
+
 
     color: #090a0d;
 
+
+
     overflow: hidden;
 
+
+
     padding: 80px 66px 0;
+
 }
+
+
+
 
 
 /* FOOTER CONTENT */
 
+
+
 .footer-content {
+
     position: relative;
+
+
 
     z-index: 5;
 
+
+
     display: flex;
+
+
 
     flex-direction: column;
 
+
+
     justify-content: flex-start;
+
 }
+
+
+
 
 
 /* =====================================================
+
    SITEMAP
+
    ===================================================== */
 
+
+
 .footer-column {
+
     display: flex;
+
+
 
     flex-direction: column;
 
+
+
     width: 250px;
+
 }
 
+
+
 .footer-column h3,
+
 .footer-socials h3 {
+
     font-family: "Barlow Condensed", sans-serif;
+
+
 
     font-size: 20px;
 
+
+
     font-weight: 900;
 
+
+
     margin-bottom: 18px;
+
 }
 
+
+
 .footer-column a {
+
     width: fit-content;
 
+
+
     color: #090a0d;
+
+
 
     font-size: 18px;
 
+
+
     line-height: 1.9;
+
+
 
     text-decoration: none;
 
+
+
     transition: 0.2s ease;
+
 }
+
+
 
 .footer-column a:hover {
+
     transform: translateX(4px);
 
+
+
     opacity: 0.65;
+
 }
+
+
+
 
 
 /* =====================================================
+
    SOCIALS
+
    ===================================================== */
 
+
+
 .footer-socials {
+
     margin-top: 65px;
+
 }
 
+
+
 .social-icons {
+
     display: flex;
+
+
 
     align-items: center;
 
+
+
     gap: 27px;
+
 }
 
+
+
 .social-icon {
+
     color: #090a0d;
+
+
 
     text-decoration: none;
 
+
+
     font-size: 16px;
+
+
 
     font-weight: 700;
 
+
+
     transition: 0.2s ease;
+
 }
+
+
 
 .social-icon:hover {
+
     transform: translateY(-3px);
 
+
+
     opacity: 0.65;
+
 }
+
+
+
 
 
 /* =====================================================
+
    DECORATIEVE VORMEN
+
    ===================================================== */
 
+
+
 .footer-shapes {
+
     position: absolute;
+
+
 
     right: -90px;
 
+
+
     top: 90px;
+
+
 
     width: 620px;
 
+
+
     height: 650px;
 
+
+
     pointer-events: none;
+
 }
 
+
+
 .shape {
+
     position: absolute;
+
+
 
     width: 430px;
 
+
+
     height: 220px;
+
+
 
     transform: skewY(-27deg);
 
+
+
     transform-origin: center;
+
 }
+
+
+
 
 
 /* BOVENSTE */
 
+
+
 .shape-1 {
+
     right: -30px;
+
+
 
     top: 20px;
 
+
+
     background: #ffe6df;
+
 }
+
+
+
 
 
 /* MIDDELSTE */
 
+
+
 .shape-2 {
+
     right: -30px;
+
+
 
     top: 185px;
 
+
+
     background: #ff00cc;
+
 }
+
+
+
 
 
 /* ONDERSTE */
 
+
+
 .shape-3 {
+
     right: -30px;
+
+
 
     top: 350px;
 
+
+
     background: #ff00cc;
+
 }
 
 
+
+
+
 /* =====================================================
+
    COPYRIGHT
+
    ===================================================== */
 
+
+
 .footer-bottom {
+
     position: absolute;
+
+
 
     left: 66px;
 
+
+
     bottom: 10px;
 
+
+
     z-index: 10;
+
 }
 
+
+
 .footer-bottom p {
+
     margin: 0;
+
+
 
     font-size: 16px;
 
+
+
     color: #111216;
+
 }
 
 
+
+
+
 /* =====================================================
+
    BACK TO TOP
+
    ===================================================== */
 
+
+
 .back-to-top {
+
     position: absolute;
+
+
 
     right: 66px;
 
+
+
     bottom: -1px;
+
+
 
     width: 56px;
 
+
+
     height: 56px;
+
+
 
     border: none;
 
+
+
     border-radius: 50%;
+
+
 
     background: rgba(60, 60, 60, 0.35);
 
+
+
     color: white;
+
+
 
     font-size: 28px;
 
+
+
     cursor: pointer;
+
+
 
     z-index: 20;
 
+
+
     transition: 0.2s ease;
+
 }
+
+
 
 .back-to-top:hover {
+
     background: rgba(40, 40, 40, 0.6);
 
+
+
     transform: translateY(-3px);
+
 }
+
+
+
 
 
 /* =====================================================
+
    TABLET
+
    ===================================================== */
+
+
 
 @media (max-width: 950px) {
 
+
+
     .quick-grid {
+
         grid-template-columns: repeat(2, 1fr);
+
     }
+
+
 
     .competition-grid {
+
         grid-template-columns: repeat(2, 1fr);
+
     }
 
+
+
     .home-hero h1 {
+
         font-size: 68px;
+
     }
+
+
 
 }
 
 
+
+
+
 /* =====================================================
+
    TELEFOON
+
    ===================================================== */
+
+
 
 @media (max-width: 650px) {
 
+
+
     /* NAVBAR */
 
+
+
     .navbar {
+
         height: 65px;
 
+
+
         padding: 0 20px;
+
     }
 
+
+
     .navbar-right {
+
         gap: 20px;
+
     }
+
+
+
 
 
     /* MENU */
 
+
+
     .side-menu {
+
         top: 65px;
 
+
+
         width: 100%;
+
     }
+
+
+
 
 
     /* HERO */
 
+
+
     .home-hero {
+
         height: 560px;
 
+
+
         align-items: flex-end;
+
     }
+
+
 
     .home-hero-content {
+
         padding: 0 25px 55px;
+
     }
+
+
 
     .home-hero h1 {
+
         font-size: 54px;
+
     }
 
+
+
     .home-hero-content > p {
+
         font-size: 16px;
+
     }
+
+
+
 
 
     /* BUTTONS */
 
+
+
     .hero-buttons {
+
         flex-direction: column;
 
+
+
         align-items: flex-start;
+
     }
+
+
+
 
 
     /* QUICK */
 
+
+
     .quick-section {
+
         padding: 60px 20px;
+
     }
+
+
 
     .quick-grid {
+
         grid-template-columns: 1fr;
 
+
+
         gap: 20px;
+
     }
+
+
+
 
 
     /* COMPETITIONS */
 
+
+
     .competitions {
+
         padding: 40px 20px 70px;
+
     }
 
+
+
     .competition-grid {
+
         grid-template-columns: 1fr;
+
+
 
         gap: 20px;
 
+
+
         margin-top: 35px;
+
     }
+
+
 
     .competition-card {
+
         min-height: auto;
 
+
+
         padding: 28px 25px;
+
     }
+
+
+
 
 
     /* TITELS */
 
+
+
     .section-heading h2 {
+
         font-size: 44px;
+
     }
+
+
+
 
 
     /* FOOTER */
 
+
+
     .site-footer {
+
         min-height: 700px;
 
+
+
         padding: 60px 25px 0;
+
     }
+
+
 
     .footer-shapes {
+
         right: -300px;
 
+
+
         opacity: 0.7;
+
     }
+
+
 
     .footer-bottom {
+
         left: 25px;
 
+
+
         bottom: 15px;
+
     }
+
+
 
     .footer-bottom p {
+
         font-size: 13px;
+
     }
 
+
+
     .back-to-top {
+
         right: 20px;
+
+
 
         width: 48px;
 
+
+
         height: 48px;
 
+
+
+        }
+
+}
+
         /* =====================================================
+
    COMPETITION VAKKEN - TEST / FIX
+
    ===================================================== */
 
+
+
 .competitions {
+
     display: block !important;
+
     width: 100% !important;
+
     padding: 60px 30px 100px !important;
+
     background: #08090c !important;
+
 }
+
+
 
 .competitions .section-container {
+
     display: block !important;
+
     max-width: 1200px !important;
+
     margin: 0 auto !important;
+
 }
+
+
 
 .competition-grid {
+
     display: grid !important;
+
     grid-template-columns: repeat(3, 1fr) !important;
+
     gap: 30px !important;
+
     width: 100% !important;
+
     margin-top: 40px !important;
+
 }
 
+
+
 .competition-card {
+
     display: block !important;
+
     width: 100% !important;
+
     min-height: 290px !important;
+
+
 
     padding: 30px !important;
 
+
+
     background: #101319 !important;
+
     border: 1px solid #353a44 !important;
+
     border-radius: 8px !important;
 
+
+
     color: white !important;
+
     text-decoration: none !important;
 
+
+
     visibility: visible !important;
+
     opacity: 1 !important;
 
+
+
     position: relative !important;
+
 }
 
+
+
 .competition-label {
+
     display: inline-block !important;
 
-    background: #ff00cc; !important;
+
+
+    background: #ff00cc !important;
+
     color: #08090c !important;
+
+
 
     padding: 7px 12px !important;
 
+
+
     border-radius: 4px !important;
 
+
+
     font-family: Arial, sans-serif !important;
+
     font-size: 13px !important;
+
     font-weight: 800 !important;
 
+
+
     margin-bottom: 20px !important;
+
 }
 
+
+
 .competition-card h3 {
+
     display: block !important;
+
+
 
     color: white !important;
 
+
+
     font-family: "Barlow Condensed", Arial, sans-serif !important;
+
     font-size: 24px !important;
+
     font-weight: 900 !important;
 
+
+
     margin: 0 0 15px 0 !important;
+
 }
 
+
+
 .competition-card p {
+
     display: block !important;
+
+
 
     color: #aeb4bf !important;
 
+
+
     font-family: Arial, sans-serif !important;
+
     font-size: 15px !important;
+
     line-height: 1.6 !important;
 
+
+
     margin: 0 !important;
+
 }
 
+
+
 .competition-card a {
+
     display: inline-block !important;
+
+
 
     color: #ff00cc !important;
 
+
+
     font-family: Arial, sans-serif !important;
+
     font-size: 15px !important;
+
     font-weight: bold !important;
+
+
 
     margin-top: 20px !important;
 
+
+
     text-decoration: none !important;
+
 }
+
+
+
 
 
 /* TABLET */
 
+
+
 @media (max-width: 950px) {
 
+
+
     .competition-grid {
+
         grid-template-columns: repeat(2, 1fr) !important;
+
     }
 
+
+
 }
+
+
+
 
 
 /* TELEFOON */
 
+
+
 @media (max-width: 650px) {
+
+
 
     .competition-grid {
+
         grid-template-columns: 1fr !important;
+
     }
+
+
 
     .competitions {
+
         padding: 50px 20px 70px !important;
+
     }
 
+
+
 }
+
+
 
 /* =========================================
+
    BINARY SYSTEM - BINARY BONANZA
+
    ========================================= */
 
+
+
 /* Inhoud van de Binary System-pagina */
+
 .binary-content {
+
     width: 100%;
+
     max-width: 1100px;
+
     margin: 40px auto;
+
     padding: 30px;
+
 }
+
+
 
 /* Titel en introductie */
+
 .binary-content > .section-heading {
+
     margin-bottom: 35px;
+
 }
+
+
 
 /* Binary Bonanza-kaart */
+
 .binary-content .quick-grid {
+
     display: grid;
+
     grid-template-columns: repeat(3, minmax(0, 1fr));
+
     gap: 25px;
+
 }
+
+
 
 .binary-content .quick-card {
+
     min-height: 250px;
+
     padding: 30px;
+
     background: #101319;
+
     border: 1px solid #292d35;
+
     border-radius: 8px;
+
     transition: transform 0.2s ease, border-color 0.2s ease;
+
 }
+
+
 
 .binary-content .quick-card:hover {
+
     transform: translateY(-4px);
+
     border-color: var(--orange);
+
 }
+
+
 
 .binary-content .quick-card h3 {
+
     color: #ffffff;
+
     margin-bottom: 12px;
+
 }
+
+
 
 .binary-content .quick-card p {
+
     color: #aeb4bf;
+
     font-size: 15px;
+
     line-height: 1.7;
+
 }
+
+
 
 .binary-content .quick-card a {
+
     display: inline-block;
+
     margin-top: 15px;
+
     color: var(--orange);
+
     font-weight: 700;
+
     text-decoration: none;
+
 }
+
+
 
 .binary-content .quick-card a:hover {
+
     color: #ffffff;
+
 }
+
+
 
 /* Game-vak */
+
 .binary-game {
+
     max-width: 800px;
+
     margin: 40px auto;
+
     padding: 30px;
+
     text-align: center;
+
     background: #101319;
+
     border: 1px solid #292d35;
+
     border-radius: 8px;
+
     transition: border-color 0.2s ease;
+
 }
+
+
 
 .binary-game:hover {
+
     border-color: var(--orange);
+
 }
+
+
 
 .binary-game h2,
+
 .binary-video h2 {
+
     font-family: "Barlow Condensed", sans-serif;
+
     font-size: 32px;
+
     margin-bottom: 12px;
+
 }
+
+
 
 .binary-game p,
+
 .binary-video p {
+
     color: #aeb4bf;
+
     font-size: 15px;
+
     line-height: 1.7;
+
     margin-bottom: 25px;
+
 }
+
+
 
 /* Game zelf */
+
 .binary-game iframe {
+
     display: block;
+
     width: 100%;
+
     max-width: 700px;
+
     height: 500px;
+
     margin: 0 auto;
+
     border: none;
+
     border-radius: 8px;
+
     background: #ffffff;
+
 }
+
+
 
 /* Video-vak */
+
 .binary-video {
+
     max-width: 800px;
+
     margin: 40px auto;
+
     padding: 30px;
+
     text-align: center;
+
     background: #101319;
+
     border: 1px solid #292d35;
+
     border-radius: 8px;
+
 }
+
+
 
 /* Light mode */
+
 body.light-mode .binary-game,
+
 body.light-mode .binary-video,
+
 body.light-mode .binary-content .quick-card {
+
     background: #ffffff;
+
     border-color: #d8d8d8;
+
 }
+
+
 
 body.light-mode .binary-content .quick-card h3,
+
 body.light-mode .binary-game h2,
+
 body.light-mode .binary-video h2 {
+
     color: #111111;
+
 }
+
+
 
 body.light-mode .binary-content .quick-card p,
+
 body.light-mode .binary-game p,
+
 body.light-mode .binary-video p {
+
     color: #555555;
+
 }
+
+
 
 /* Tablet */
+
 @media (max-width: 950px) {
+
     .binary-content .quick-grid {
+
         grid-template-columns: repeat(2, minmax(0, 1fr));
+
     }
+
 }
+
+
 
 /* Telefoon */
+
 @media (max-width: 650px) {
+
     .binary-content {
+
         padding: 20px;
+
         margin: 25px auto;
+
     }
+
+
 
     .binary-content .quick-grid {
+
         grid-template-columns: 1fr;
+
     }
+
+
 
     .binary-game,
+
     .binary-video {
+
         padding: 18px;
+
         margin: 25px auto;
+
     }
+
+
 
     .binary-game iframe {
+
         height: 400px;
+
     }
+
 }
+
+
 
 .info-box {
+
     background: linear-gradient(135deg, #171717, #202020);
+
     border: 1px solid #303030;
+
     border-left: 4px solid #b38cff;
+
     border-radius: 10px;
+
     padding: 28px;
+
     margin: 25px 0;
+
     color: white;
+
 }
+
+
 
 .info-label {
+
     color: #b38cff;
+
     font-size: 12px;
+
     font-weight: bold;
+
     letter-spacing: 3px;
+
 }
+
+
 
 .info-box h2 {
+
     font-size: 26px;
+
     margin: 12px 0;
+
 }
+
+
 
 .info-line {
+
     height: 1px;
+
     background: #383838;
+
     margin: 18px 0;
+
 }
+
+
 
 .info-box p {
+
     color: #bdbdbd;
+
     line-height: 1.8;
+
     margin: 0;
+
 }
+
+
 
 /* Car - https://www.cursors-4u.com/cursor/mec166 */
+
 * {
+
   cursor: url('https://cdn.cursors-4u.net/previews/car-68ebf82e-32.webp') 32 32, auto !important;
+
 }
+
 /* End www.Cursors-4U.com Code */
-
-    }
-
-}
