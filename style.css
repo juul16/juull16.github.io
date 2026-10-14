@@ -1465,6 +1465,13 @@ body.light-mode .binary-video p {
     line-height: 1.8;
     margin: 0;
 }
+
+/* Car - https://www.cursors-4u.com/cursor/mec166 */
+* {
+  cursor: url('https://cdn.cursors-4u.net/previews/car-68ebf82e-32.webp') 32 32, auto !important;
+}
+/* End www.Cursors-4U.com Code */
+
     }
 
 }
