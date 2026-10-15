@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Binary System - Juul's Website</title>
+    <title>Binary System, Input Output and Color Models - Juul's Website</title>
 
     <link rel="stylesheet" href="./style.css">
 
@@ -103,6 +103,84 @@
             line-height: 1.7;
         }
 
+        /* INPUT - PROCESSING - OUTPUT INFO BOXES */
+        .ipo-section {
+            max-width: 1000px;
+            margin: 50px auto;
+        }
+
+        .ipo-section .section-heading {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .ipo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        .ipo-card {
+            background: #111111;
+            border: 1px solid #292929;
+            border-radius: 16px;
+            padding: 25px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .ipo-card:hover {
+            transform: translateY(-4px);
+            border-color: #ff7a00;
+        }
+
+        .ipo-card .ipo-icon {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .ipo-card h3 {
+            margin-bottom: 12px;
+            color: #ff7a00;
+        }
+
+        .ipo-card p {
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+
+        .ipo-example {
+            margin-top: 25px;
+            padding: 20px;
+            background: #111111;
+            border: 1px solid #292929;
+            border-left: 4px solid #ff7a00;
+            border-radius: 12px;
+            line-height: 1.7;
+        }
+
+        .ipo-video {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            text-align: center;
+            background: #111111;
+            border: 1px solid #292929;
+            border-radius: 16px;
+        }
+
+        .ipo-video p {
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .ipo-video iframe {
+            display: block;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border: none;
+            border-radius: 10px;
+        }
+
         /* MOBILE */
         @media (max-width: 600px) {
             .binary-content {
@@ -116,6 +194,18 @@
 
             .binary-game iframe {
                 height: 400px;
+            }
+
+            .ipo-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .ipo-card {
+                padding: 20px;
+            }
+
+            .ipo-video {
+                padding: 18px;
             }
         }
     </style>
@@ -180,10 +270,10 @@
     </div>
 
 
-    <!-- BINARY SYSTEM CONTENT -->
+    <!-- MAIN CONTENT -->
     <main class="binary-content">
 
-        <!-- PAGINA TITEL -->
+        <!-- BINARY SYSTEM TITLE -->
         <div class="section-heading">
 
             <span>LEARN &amp; PLAY</span>
@@ -197,7 +287,7 @@
         </div>
 
 
-        <!-- QUICK CARD -->
+        <!-- BINARY BONANZA QUICK CARD -->
         <div class="quick-grid">
 
             <div class="quick-card">
@@ -228,7 +318,7 @@
         </div>
 
 
-        <!-- GAME BOX -->
+        <!-- BINARY GAME BOX -->
         <section class="binary-game">
 
             <h2>Try it yourself!</h2>
@@ -247,7 +337,7 @@
         </section>
 
 
-        <!-- VIDEO BOX -->
+        <!-- BINARY VIDEO BOX -->
         <section class="binary-video">
 
             <h2>Learn how the binary system works</h2>
@@ -256,7 +346,211 @@
                 In this video we will explain how the binary system works.
             </p>
 
-            <!-- ADD YOUR VIDEO HERE -->
+            <!-- ADD YOUR BINARY SYSTEM VIDEO HERE -->
+
+        </section>
+
+
+        <!-- INPUT - PROCESSING - OUTPUT SECTION -->
+        <section class="ipo-section">
+
+            <div class="section-heading">
+
+                <span>LEARN THE BASICS</span>
+
+                <h2>Input – Processing – Output</h2>
+
+                <p>
+                    Computers work in three main steps: input, processing and output.
+                    Each step has an important role in turning information into a result.
+                </p>
+
+            </div>
+
+
+            <!-- INPUT, PROCESSING AND OUTPUT INFO BOXES -->
+            <div class="ipo-grid">
+
+                <div class="ipo-card">
+
+                    <div class="ipo-icon">⌨️</div>
+
+                    <h3>1. Input</h3>
+
+                    <p>
+                        Input is the information a computer receives.
+                        For example, you can type on a keyboard, click a mouse
+                        or use a microphone to give information to a computer.
+                    </p>
+
+                </div>
+
+
+                <div class="ipo-card">
+
+                    <div class="ipo-icon">⚙️</div>
+
+                    <h3>2. Processing</h3>
+
+                    <p>
+                        Processing is when the computer works with the information.
+                        The CPU follows instructions and processes the data
+                        to decide what should happen next.
+                    </p>
+
+                </div>
+
+
+                <div class="ipo-card">
+
+                    <div class="ipo-icon">🖥️</div>
+
+                    <h3>3. Output</h3>
+
+                    <p>
+                        Output is the result the computer gives back.
+                        This could be text or pictures on a screen,
+                        sound from speakers or a document printed on paper.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- INPUT - PROCESSING - OUTPUT EXAMPLE -->
+            <div class="ipo-example">
+
+                <h3>Example: Typing on a computer</h3>
+
+                <p>
+                    <strong>Input:</strong> You press a key on your keyboard.
+                    <br>
+                    <strong>Processing:</strong> The computer processes which key you pressed.
+                    <br>
+                    <strong>Output:</strong> The letter appears on your screen.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- INPUT - PROCESSING - OUTPUT VIDEO BOX -->
+        <section class="ipo-video">
+
+            <h2>Watch: How Computers Work</h2>
+
+            <p>
+                Watch this video to learn how input, processing and output work
+                together inside a computer.
+            </p>
+
+            <!-- Replace YOUR_VIDEO_ID with your YouTube video ID -->
+            <iframe
+                src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                title="How Computers Work: Input, Processing and Output"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
+
+        </section>
+
+
+        <!-- COLOR MODELS SECTION -->
+        <section class="ipo-section">
+
+            <div class="section-heading">
+
+                <span>LEARN THE BASICS</span>
+
+                <h2>Color Models</h2>
+
+                <p>
+                    Color models explain how computers represent and display colors.
+                    Different color models are used for screens, printing and digital design.
+                </p>
+
+            </div>
+
+
+            <!-- COLOR MODEL INFO BOXES -->
+            <div class="ipo-grid">
+
+                <!-- RGB -->
+                <div class="ipo-card">
+
+                    <div class="ipo-icon">🔴</div>
+
+                    <h3>RGB</h3>
+
+                    <p>
+                        RGB stands for Red, Green and Blue.
+                        Screens combine different amounts of these three colors
+                        to create many other colors. When all three are at full
+                        intensity, the result is white.
+                    </p>
+
+                </div>
+
+
+                <!-- CMYK -->
+                <div class="ipo-card">
+
+                    <div class="ipo-icon">🖨️</div>
+
+                    <h3>CMYK</h3>
+
+                    <p>
+                        CMYK stands for Cyan, Magenta, Yellow and Key (Black).
+                        It is mainly used for printing. Printers mix these inks
+                        in different amounts to create colors on paper.
+                    </p>
+
+                </div>
+
+
+                <!-- HEXADECIMAL COLORS -->
+                <div class="ipo-card">
+
+                    <div class="ipo-icon">🎨</div>
+
+                    <h3>Hexadecimal Colors</h3>
+
+                    <p>
+                        Hexadecimal color codes are used in websites and digital design.
+                        A code starts with a hashtag and uses six letters or numbers
+                        to represent a color. For example, #FF0000 represents red.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- COLOR MODELS VIDEO BOX -->
+        <section class="ipo-video">
+
+            <h2>Watch: Understanding Color Models</h2>
+
+            <p>
+                Watch this video to learn how RGB, CMYK and hexadecimal colors work
+                and when each color model is used.
+            </p>
+
+            <!-- Replace YOUR_COLOR_VIDEO_ID with your YouTube video ID -->
+            <iframe
+                src="https://www.youtube.com/embed/YOUR_COLOR_VIDEO_ID"
+                title="Understanding Color Models: RGB, CMYK and Hexadecimal"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
 
         </section>
 
@@ -341,4 +635,3 @@
 
 </body>
 </html>
-
